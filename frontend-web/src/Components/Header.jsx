@@ -1,5 +1,6 @@
 import React from 'react'
 import HorizontalScrollCards from './HorizontalScrollCards'
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
@@ -28,19 +29,19 @@ function Header() {
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                     <li className="nav-item">
-                                        <a className="nav-link active" aria-current="page" href="#"><i class="bi bi-person-fill"></i></a>
+                                        <a className="nav-link active" aria-current="page" href="#"><i className="bi bi-person-fill"></i></a>
                                     </li>
                                     <li className="nav-item">
-                                        <button type="button" class="btn btn-primary position-relative">
-                                        <a className="nav-link" href="#"><i class="bi bi-bag"></i></a>
-                                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        <button type="button" className="btn btn-primary position-relative">
+                                        <a className="nav-link" href="#"><i className="bi bi-bag"></i></a>
+                                            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                                 {/* 99+ */}
-                                                <span class="visually-hidden">unread messages</span>
+                                                <span className="visually-hidden">unread messages</span>
                                             </span>
                                         </button>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#"><i class="bi bi-search"></i></a>
+                                        <a className="nav-link" href="#"><i className="bi bi-search"></i></a>
                                     </li>
 
                                 </ul>
@@ -53,36 +54,34 @@ function Header() {
 
             <div id="navbar-wrapper">
                 <div className="inner-navbar">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="container-fluid">
+                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                        <div className="container-fluid">
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active underline-animation" aria-current="page" href="#">Products </a>
+                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                                    <li className="nav-item">
+                                    <Link to="/Products" className='underline-animation link'>Products</Link>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link underline-animation" href="#">Build your own Bundle</a>
+                                    <li className="nav-item">
+                                    <Link to="/Hair" className='underline-animation link'>Hair</Link>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link underline-animation" href="#">Order Tracker</a>
+                                    <li className="nav-item">
+                                    <Link to="/Trackorder" className='underline-animation link'>Track Order</Link>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link underline-animation" href="#">Buy Now</a>
+                                    <li className="nav-item">
+                                    <Link to="/Products" className='underline-animation link'>Buy Now</Link>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link underline-animation" href="#">Blog</a>
+                                    <li className="nav-item">
+                                    <Link to="/Trimmer" className='underline-animation link'>Trimmer</Link>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link underline-animation" href="#">
-                                            Deals</a>
+                                    <li className="nav-item">
+                                    <Link to="/Trimmer" className='underline-animation link'>All Products</Link>
+
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link underline-animation" href="#">Trimmers</a>
+                                    <li className="nav-item">
+                                    <Link to="/Contact" className='underline-animation link'>Contact</Link>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link underline-animation" href="#">All Products</a>
-                                    </li>
+                                  
                                 </ul>
 
                             </div>

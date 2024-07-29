@@ -183,3 +183,8 @@ width: 40%;
       background-color: transparent;
       border: none;
     }
+    .link{
+      text-decoration: none;
+      color: #000;
+      padding: 8px;
+    }
