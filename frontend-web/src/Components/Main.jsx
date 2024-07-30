@@ -1,8 +1,12 @@
 import React from 'react'
+import HorizontalScrollCards from './HorizontalScrollCards'
 
 function Main() {
   return (
     <>
+
+      <HorizontalScrollCards/>
+
       <div className="carousel-wrapper">
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-indicators">

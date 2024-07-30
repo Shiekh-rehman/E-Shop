@@ -6,6 +6,7 @@ import Products from "./Pages/Products"
 import Trackorder from "./Pages/Trackorder"
 import Trimmer from "./Pages/Trimmer"
 import Contact from "./Pages/Contact"
+import Outletroute from "./Components/Outletroute"
 
 import {
   createBrowserRouter,
@@ -17,7 +18,7 @@ import {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
+    <Route path="/" element={<Outletroute/>}>
       <Route path="/" element={<Home />} />
       <Route path="/Face" element={<Face/>} />
       <Route path="/Hair" element={<Hair/>} />
@@ -26,7 +27,6 @@ const router = createBrowserRouter(
       <Route path="/Trackorder" element={<Trackorder/>} />
       <Route path="/Trimmer" element={<Trimmer/>} />
       <Route path="/Contact" element={<Contact/>} />
-
     </Route>
   )
 );
